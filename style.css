@@ -1,54 +1,73 @@
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    /*    margin-bottom: 10px;*/
+img,
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+  /*    margin-bottom: 10px;*/
 }
 
 #portraet {
-    width: 30vw;
-    height: 29vw;
-
+  width: 30vw;
+  height: 29vw;
 }
 
 #bred {
-    width: 51vw;
-    height: 34vw;
-
+  width: 51vw;
+  height: 34vw;
 }
 
 #hoej {
-    width: 34vw;
-    height: 51vw;
-
+  width: 34vw;
+  height: 51vw;
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif;
-    color: white;
-    font-size: 10vw;
-    margin: 0;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 10vw;
+  margin: 0;
 }
 
 #baggrunden {
-    border: 3px solid black;
-    position: relative;
-    margin-bottom: 10vw;
+  border: 3px solid black;
+  position: relative;
+  margin-bottom: 10vw;
 }
 
 #baggrunden h1 {
-    position: absolute;
-    top: 0vw;
-    left: 6vw;
+  position: absolute;
+  top: 0vw;
+  left: 6vw;
 }
 
 #billeder {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 #billeder .col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.iframe-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  height: 0;
+
+  padding-top: calc(100% / (16 / 9));
+}
+
+iframe {
+  position: absolute;
+
+  inset: 0;
+
+  height: 100%;
+
+  width: 100%;
+}
