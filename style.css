@@ -31,11 +31,11 @@ h1 {
 h3,
 h4 {
   font-family: "Oswald", sans-serif;
-  color: aqua;
+  color: rgb(12, 50, 133);
 }
 
 #baggrunden {
-  border: 3px solid black;
+  /* border: 3px solid black; */
   position: relative;
   margin-bottom: 10vw;
 }
@@ -52,10 +52,16 @@ h4 {
   gap: 20px;
 }
 
-#billeder .col {
+/* #billeder .col {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+} */
+
+.citat p {
+  font-family: "Oswald", sans-serif;
+  color: rgb(12, 50, 133);
+  font-size: 3rem;
 }
 
 .iframe-wrapper {
