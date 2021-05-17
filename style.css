@@ -28,6 +28,11 @@ h1 {
   margin: 0;
 }
 
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+}
+
 #baggrunden {
   border: 3px solid black;
   position: relative;
@@ -70,4 +75,22 @@ iframe {
   height: 100%;
 
   width: 100%;
+}
+
+@media (min-width: 300px) {
+  #billeder {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 600px) {
+  #billeder {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  #billeder {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
